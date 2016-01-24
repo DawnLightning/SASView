@@ -141,4 +141,18 @@ height: 30px;
 clear:both;
 padding-left: 10px;
 }
-
+/* =============================================================================
+  welcome admin
+============================================================================= */
+.admin{
+  float: right;
+  margin: 2px;
+}
+.admin-1{
+    padding-top: 3px;
+}
+.admin-text{
+  color: #496a7f;
+  font-size: 2px;
+  margin-right: 20px;
+}

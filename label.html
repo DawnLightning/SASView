@@ -1,0 +1,185 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>temporary</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" href="css/sas.css">
+  	<link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+
+.contain{
+	height:528px;
+	width:100%;
+	margin-top: 30px;   /*可改标签切换与上面的距离*/
+	padding:0;
+}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	position:absolute;
+	left:10.5%;
+	list-style: none;
+	color:#fff;
+	font-size:0.8em;}
+ul.tabs li {
+	float: left;
+	margin:0; 
+	padding: 0;
+	height: 28px;
+	line-height: 28px;
+	border: 0px;
+	border-left: none;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+
+}
+ul.tabs li a {
+	text-decoration: none;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 20px;
+	border: 0px;
+}
+html ul.tabs li, html ul.tabs li a:link {
+	color:#FFF;	
+}
+html ul.tabs li, html ul.tabs li a:visited  {
+	color:#FFF;
+}
+html ul.tabs li.active, html ul.tabs li.active {
+	border-bottom: 4px solid #82BA43;
+	color:#FFF;
+}
+
+.tab_container {
+	position:absolute;
+	float:left;
+	left:10%;
+    background-color:#FFF;
+	height:500px;
+	width:80%;
+	overflow:hidden;
+	text-align:center;
+	margin-top: 28px;
+	margin-bottom: 0;
+	padding:0;
+	box-shadow: 6px 10px 7px #333333;
+	border:2px solid #FFF;
+	border-radius:7px;
+}
+.tab_content {
+	padding: 0px;
+	font-size: 1.2em;
+}
+</style>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">   
+$(document).ready(function() {  
+  
+    //Default Action  
+    $(".tab_content").hide(); //Hide all content  
+    $("ul.tabs li:first").addClass("active").show(); //Activate first tab  
+    $(".tab_content:first").show(); //Show first tab  content  
+      
+    //On Click Event  
+    $("ul.tabs li").click(function() {  
+        $("ul.tabs li").removeClass("active"); //Remove any "active" class  
+        $(this).addClass("active"); //Add "active" class to selected tab  
+        $(".tab_content").hide(); //Hide all tab content  
+        var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content  
+        $(activeTab).fadeIn(); //Fade in the active content  
+        return false;  
+    });  
+  
+});  
+</script> 
+</head>
+<body background="image/10.jpg">
+<div id="container">
+  <div class="header">
+<span class=" dd-title-center dd-title-white">   督导听课</span><span class="dd-title-blue">系统</span>
+  </div>
+<div id="page">
+  <div class="container-fluid">
+  	<div id="wrapper" class="wrapper">
+     <div class="contain">        
+    <ul class="tabs">  
+        <li class="active"><a href="#tab1">临时表</a></li>  
+        <li><a href="#tab2">确认表</a></li>  
+        <li><a href="#tab3">发生日志</a></li>
+    </ul> 
+    <div class="tab_container">  
+        <div id="tab1" class="tab_content" style="display: block; ">  
+          临时表  
+        </div>    
+        <div id="tab2" class="tab_content" style="display: none; ">  
+           确认表  
+        </div>  
+        <div id="tab3" class="tab_content" style="display: none; ">  
+           发生日志
+        </div> 
+    </div>    
+</div>
+ </div> 
+</div>
+	<button id="mm-menu-toggle" class="mm-menu-toggle"></button>
+	<nav id="mm-menu" class="mm-menu">
+	  <div class="mm-menu__header">
+	  </div>
+	  <ul class="mm-menu__items">
+	    <li class="mm-menu__item">
+	       <a class="mm-menu__link" href="confirm.html">
+            <img src="image/1.png"><div class="mm-menu__link-text">主页</div>
+           </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="reference.html">
+	        <img src="image/2.png"><div class="mm-menu__link-text">排课参考</div>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="auto.html">
+	        <img src="image/3.png"><div class="mm-menu__link-text">自动生成</div>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="teacher.html">
+	        <img src="image/4.png"><div class="mm-menu__link-text">教师信息</div>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="supervisor.html">
+	        <img src="image/5.png"><div class="mm-menu__link-text">督导信息</div>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="schedule.html">
+	        <img src="image/6.png"><div class="mm-menu__link-text">进度表</div>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="key.html">
+	        <img src="image/7.png"><div class="mm-menu__link-text">权限管理</div>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="set.html">
+	        <img src="image/8.png"><div class="mm-menu__link-text">设置</div>
+	      </a>
+	    </li>   
+	  </ul>
+	</nav><!-- /nav -->
+</div><!--page-->
+<div id="footer"><span class="foot-white">CopyRight </span><span class="foot-blue">破晓技术团队.</span><span class="foot-white">All Rights Resevered.</span></div>
+</div><!--container-->
+
+	<script src="js/materialMenu.js"></script>
+  <script src="js/tab.js"></script>
+	<script>
+	  var menu = new Menu;
+	</script> 
+</body>
+</html>

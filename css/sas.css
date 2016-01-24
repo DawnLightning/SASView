@@ -1,0 +1,144 @@
+
+/* CSS Document */
+
+/* =============================================================================
+  base
+============================================================================= */
+html,body{ height:100%; margin:0; padding:0;}
+html{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	font;100% Tahoma, Geneva, sans-serif;
+  font-family: Microsoft YaHei;
+	}
+ul,li{
+	list-style:none;
+  text-align: center;}
+img{
+	border:0;
+  margin:20px auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+a{
+  color: rgb(215,213,212);
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.ico{
+  width: 50%;
+  height: 50%;
+}
+/* =============================================================================
+  title
+============================================================================= */
+.dd-title-white{
+  font-size: 24px;
+  color: #fff;
+}
+.dd-title-blue{
+  font-size:24px;
+  color: rgb(205,239,229);
+}
+.dd-title-center{
+  margin-top: 60px;
+  padding-left: 5px;
+}
+
+/*foot*/
+.foot-white{
+  font-size: 10px;
+  color: #fff;
+}
+.foot-blue{
+  font-size: 10px;
+  color: rgb(205,239,229);
+}
+
+/* =============================================================================
+  textbox
+============================================================================= */
+.margin-lg{
+  margin-top: 9%;
+}
+.margin-md{
+  margin-top: 1em;
+}
+.btn-margin{
+  margin-left: 70px;
+  margin-top: 1.5em;
+}
+.text-style1{
+  border-radius: 10px;
+  border-color: rgba(255,255,255,.1);
+  -moz-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Firefox3.6+ */ 
+  -webkit-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Chrome5+, Safari5+ */ 
+  box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Latest Opera */
+  background-color: rgb(45,62,106);
+  outline:none;
+  color: rgb(229,222,189);
+  font-size: 1em;
+}
+.text-style2{
+  border-radius: 10px;
+  border-color: rgba(255,255,255,.1);
+  -moz-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Firefox3.6+ */ 
+  -webkit-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Chrome5+, Safari5+ */ 
+  box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Latest Opera */
+  background-color: rgb(56,83,130);
+  outline:none;
+  color: rgb(229,222,189);
+  font-size: 1em;
+}
+.text-style3{
+  border-radius: 10px;
+  border-color: rgba(215,213,12,.2);
+  background-color: #fff;
+  color: rgb(56,83,130);
+  outline:none;
+}
+/* =============================================================================
+  test
+============================================================================= */
+
+
+#container {
+min-height:100%;
+height: auto !important;
+height: 100%; 
+position: relative;
+}
+#header {
+padding-left: 15px;
+padding-right: 15px;
+}
+.header{
+  padding-top: 4px;
+  padding-left: 40px;
+}
+#page {
+width: 100%;
+margin: 0 auto;
+padding-bottom: 30px;
+}
+#footer {
+position:absolute;
+bottom: 0;
+width: 90%;
+height: 30px;
+clear:both;
+padding-left: 10px;
+}
+

@@ -77,7 +77,7 @@ a:hover{
   margin-top: 1em;
 }
 .btn-margin{
-  margin-left: 70px;
+  margin-left:20%;
   margin-top: 1.5em;
 }
 .text-style1{
@@ -153,6 +153,125 @@ padding-left: 10px;
 }
 .admin-text{
   color: #496a7f;
-  font-size: 2px;
+  font-size: 10px;
   margin-right: 20px;
 }
+/* =============================================================================
+  set -tabs
+============================================================================= */
+.set-contain{
+  height:428px;
+  width:300px;
+  margin-top:5%;   /*可改标签切换与上面的距离*/
+  padding:0;
+}
+ul.set-tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position:absolute;
+  left:35%;
+  list-style: none;
+  color:#fff;
+  font-size:0.8em;}
+ul.set-tabs li {
+  float: left;
+  margin:0; 
+  padding: 0;
+  height: 28px;
+  line-height: 28px;
+  border: 0px;
+  border-left: none;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+
+}
+ul.set-tabs li a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.2em;
+  padding: 0 20px;
+  border: 0px;
+}
+html ul.set-tabs li, html ul.set-tabs li a:link {
+  color:#FFF; 
+}
+html ul.set-tabs li, html ul.set-tabs li a:visited  {
+  color:#FFF;
+}
+html ul.set-tabs li.active, html ul.set-tabs li.active {
+  border-bottom: 2px solid #fff;
+  color:#FFF;
+}
+
+.set-tab_container {
+  position:absolute;
+  float:left;
+  left:25%;
+  height:400px;
+  width:50%;
+  overflow:hidden;
+  text-align:center;
+  margin-top: 28px;
+  margin-bottom: 0;
+  padding:0;
+}
+.set-tab_content {
+  padding: 0px;
+  font-size: 1.2em;
+}
+.set-title{
+  color:rgb(205,239,229)
+}
+/* =============================================================================
+  set -btn
+============================================================================= */
+.text-style{
+  border-radius: 10px;
+  border-color: rgba(255,255,255,.1);
+  -moz-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Firefox3.6+ */ 
+  -webkit-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Chrome5+, Safari5+ */ 
+  box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Latest Opera */
+  background-color: rgb(45,62,106);
+  outline:none;
+  color: rgb(229,222,189);
+  font-size: .875em;
+}
+.color-mar1{
+  margin-top: 10%;
+  margin-left:25%;
+  background-color: rgb(43,58,101);
+}
+.color-mar2{
+  margin-top: 2.5%;
+  margin-left:25%;
+  background-color: rgb(49,68,113);
+}
+.color-mar3{
+  margin-top: 2.5%;
+  margin-left:25%;
+  background-color: rgb(56,80,128);
+}
+.color-mar4{
+  margin-top: 5%;
+}
+.color-mar5{
+  margin-top: 16%;
+}
+.color-mar6{
+  margin-top:15%;
+}
+.remember{
+  color: #fff;
+  font-size: .625em;
+  float: left;
+  margin-left: 26%;
+  margin-top: 1%;
+}
+.time-color{
+  color: #fff;
+  font-size: .875em;
+  font-weight: normal;
+}
+

@@ -8,13 +8,13 @@
   	<link rel="stylesheet" href="css/style.css">
 <style type="text/css">
 
-.sch-contain{
+.contain{
 	height:528px;
 	width:100%;
 	margin-top: 30px;   /*可改标签切换与上面的距离*/
 	padding:0;
 }
-ul.sch-tabs {
+ul.tabs {
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -23,7 +23,7 @@ ul.sch-tabs {
 	list-style: none;
 	color:#fff;
 	font-size:0.8em;}
-ul.sch-tabs li {
+ul.tabs li {
 	float: left;
 	margin:0; 
 	padding: 0;
@@ -36,25 +36,25 @@ ul.sch-tabs li {
 	position: relative;
 
 }
-ul.sch-tabs li a {
+ul.tabs li a {
 	text-decoration: none;
 	display: block;
 	font-size: 1.2em;
 	padding: 0 20px;
 	border: 0px;
 }
-html ul.sch-tabs li, html ul.sch-tabs li a:link {
+html ul.tabs li, html ul.tabs li a:link {
 	color:#FFF;	
 }
-html ul.sch-tabs li, html ul.sch-tabs li a:visited  {
+html ul.tabs li, html ul.tabs li a:visited  {
 	color:#FFF;
 }
-html ul.sch-tabs li.active, html ul.sch-tabs li.active {
-	border-bottom: 3px solid #82BA43;
+html ul.tabs li.active, html ul.tabs li.active {
+	border-bottom: 4px solid #82BA43;
 	color:#FFF;
 }
 
-.sch-tab_container {
+.tab_container {
 	position:absolute;
 	float:left;
 	left:10%;
@@ -70,7 +70,7 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
 	border:2px solid #FFF;
 	border-radius:7px;
 }
-.sch-tab_content {
+.tab_content {
 	padding: 0px;
 	font-size: 1.2em;
 }
@@ -80,15 +80,15 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
 $(document).ready(function() {  
   
     //Default Action  
-    $(".sch-tab_content").hide(); //Hide all content  
-    $("ul.sch-tabs li:first").addClass("active").show(); //Activate first tab  
-    $(".sch-tab_content:first").show(); //Show first tab  content  
+    $(".tab_content").hide(); //Hide all content  
+    $("ul.tabs li:first").addClass("active").show(); //Activate first tab  
+    $(".tab_content:first").show(); //Show first tab  content  
       
     //On Click Event  
-    $("ul.sch-tabs li").click(function() {  
-        $("ul.sch-tabs li").removeClass("active"); //Remove any "active" class  
+    $("ul.tabs li").click(function() {  
+        $("ul.tabs li").removeClass("active"); //Remove any "active" class  
         $(this).addClass("active"); //Add "active" class to selected tab  
-        $(".sch-tab_content").hide(); //Hide all tab content  
+        $(".tab_content").hide(); //Hide all tab content  
         var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content  
         $(activeTab).fadeIn(); //Fade in the active content  
         return false;  
@@ -100,25 +100,25 @@ $(document).ready(function() {
 <body background="image/10.jpg">
 <div id="container">
   <div class="header">
-<span class=" dd-title-center dd-title-white">   督导&nbsp;|&nbsp;</span><span class="dd-title-blue">进度表<a href="/" class="admin admin-text">欢迎您，管理员</a><img src="image/14.png"class="admin admin-1"></span>
+<span class=" dd-title-center dd-title-white">   督导听课</span><span class="dd-title-blue">系统</span>
   </div>
 <div id="page">
   <div class="container-fluid">
   	<div id="wrapper" class="wrapper">
-     <div class="sch-contain">        
-    <ul class="sch-tabs">  
-        <li class="active"><a href="#tab1">查看进度</a></li>  
-        <li><a href="#tab2">导入</a></li>  
-        <li><a href="#tab3">导出</a></li>
+     <div class="contain">        
+    <ul class="tabs">  
+        <li class="active"><a href="#tab1">临时表</a></li>  
+        <li><a href="#tab2">确认表</a></li>  
+        <li><a href="#tab3">发生日志</a></li>
     </ul> 
-    <div class="sch-tab_container">  
-        <div id="tab1" class="sch-tab_content" style="display: block; ">  
+    <div class="tab_container">  
+        <div id="tab1" class="tab_content" style="display: block; ">  
           临时表  
         </div>    
-        <div id="tab2" class="sch-tab_content" style="display: none; ">  
+        <div id="tab2" class="tab_content" style="display: none; ">  
            确认表  
         </div>  
-        <div id="tab3" class="sch-tab_content" style="display: none; ">  
+        <div id="tab3" class="tab_content" style="display: none; ">  
            发生日志
         </div> 
     </div>    
@@ -177,7 +177,7 @@ $(document).ready(function() {
 </div><!--container-->
 
 	<script src="js/materialMenu.js"></script>
-  <script src="js/tabs.js"></script>
+  <script src="js/tab.js"></script>
 	<script>
 	  var menu = new Menu;
 	</script> 

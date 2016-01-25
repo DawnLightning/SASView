@@ -307,7 +307,7 @@ overflow:hidden;}
 #checkall{
 	text-align:center;
 	vertical-align:middle;
-	margin-top:6px;
+	margin-top:6.5px;
 	}/*复选框位置*/
 th p{
 	text-align:center;
@@ -324,3 +324,5 @@ tr {
 .ove{
 	height:380px;
 	overflow:hidden;}
+
+

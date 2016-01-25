@@ -274,4 +274,72 @@ html ul.set-tabs li.active, html ul.set-tabs li.active {
   font-size: .875em;
   font-weight: normal;
 }
+/* =============================================================================
+  schedule
+============================================================================= */
+.sch-contain{
+  height:528px;
+  width:100%;
+  margin-top: 30px;   /*可改标签切换与上面的距离*/
+  padding:0;
+}
+ul.sch-tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position:absolute;
+  left:10.5%;
+  list-style: none;
+  color:#fff;
+  font-size:0.8em;}
+ul.sch-tabs li {
+  float: left;
+  margin:0; 
+  padding: 0;
+  height: 28px;
+  line-height: 28px;
+  border: 0px;
+  border-left: none;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
 
+}
+ul.sch-tabs li a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.2em;
+  padding: 0 20px;
+  border: 0px;
+}
+html ul.sch-tabs li, html ul.sch-tabs li a:link {
+  color:#FFF; 
+}
+html ul.sch-tabs li, html ul.sch-tabs li a:visited  {
+  color:#FFF;
+}
+html ul.sch-tabs li.active, html ul.sch-tabs li.active {
+  border-bottom: 3px solid #82BA43;
+  color:#FFF;
+}
+
+.sch-tab_container {
+  position:absolute;
+  float:left;
+  left:10%;
+    background-color:#FFF;
+  height:500px;
+  width:80%;
+  overflow:hidden;
+  text-align:center;
+  margin-top: 28px;
+  margin-bottom: 0;
+  padding:0;
+  box-shadow: 6px 10px 7px #333333;
+  border:2px solid #FFF;
+  border-radius:7px;
+}
+.sch-tab_content {
+  padding: 0px;
+  font-size: 1.2em;
+}

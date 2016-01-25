@@ -303,4 +303,19 @@ overflow:hidden;}
 .table-hover  td:active{
 	 background-color:#CFFC85;}
 	
+/*选框*/	
+th p{
+	text-align:center;
+	color:#383838;
+	font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+	}
+tr {
+	text-align:center;
+	color:#383838;
+	font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
 	
+	}	
+/*table溢出 未完善定义*/
+.ove{
+	height:380px;
+	overflow:hidden;}

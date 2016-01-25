@@ -307,7 +307,7 @@ overflow:hidden;}
 th p{
 	text-align:center;
 	color:#383838;
-	font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+	font: bold 1.25em/2em Microsoft YaHei;/*字大小跟字距*/
 	}
 tr {
 	text-align:center;

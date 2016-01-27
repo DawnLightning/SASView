@@ -1,9 +1,5 @@
 // JavaScript Document
 function g(o){return document.getElementById(o);}
 function hoverli(n){
-for(var i=1;i<=13;i++){g('tb_'+i).className='aa';g('tbc_0'+i).className='undis';}g('tbc_0'+n).className='listtab';g('tb_'+n).className='bb';
-<<<<<<< HEAD
+for(var i=1;i<=11;i++){g('tb_'+i).className='aa';g('tbc_0'+i).className='undis';}g('tbc_0'+n).className='list2';g('tb_'+n).className='bb';
 }
-=======
-}
->>>>>>> 6021536258fae1f493572cf2a73a4d48dee3474d

@@ -8,6 +8,7 @@
 	width:100%;
 	margin-top: 2%;   /*可改标签切换与上面的距离*/
 	padding:0;
+	 
 }
 ul.tabs {
 	margin: 0;
@@ -325,4 +326,67 @@ tr {
 	height:380px;
 	overflow:hidden;}
 
-
+/*督导信息*/
+#navtab li {
+	list-style:none;
+    width:130px;  
+	height:30px; 
+	margin:7px 3px 7px 3px;
+	border-radius:10px;
+	text-align:left;
+    padding-top:6px; 
+	padding-left:25%;
+    }/*字体不居中为了不被覆盖*/
+.aa {
+	background:#ccc;
+	}/*点击前*/
+.bb {
+	background:#999;
+	}/*点击后*/
+.cc { 
+    border-top:4px solid #ff66ff; 
+	background:#fcf;
+	}/*删除则影响bb*/
+.listtab  { 
+    font: normal 0.65em/2em Microsoft YaHei;
+    padding:3px;
+	text-align:left;
+	}
+.listtab li{ 
+    font: normal 0.65em/2em Microsoft YaHei;
+    padding:0 0 0 10px;
+	}
+.vltab {
+	float:left;
+	width:11%; 
+	position:relative;
+	overflow:hidden;
+	}/*over白板复上面*/
+.vrtab {
+	float:left;
+	width:89%;
+	position:relative;
+	}
+.rtab{
+	padding:0;
+    clear:both;
+	text-align:left;
+	height:495px;
+	/*border-top:1px solid #AAC7E9;border-right:1px solid #AAC7E9;border-bottom:1px solid #AAC7E9; 观察范围*/
+	overflow:auto;
+	_width:89%;
+    _height:100%;
+	}/*产生滚动条 结合外面divoverflowhidden*/
+.dis{
+	display:block;
+	}
+.undis{
+	display:none;
+	}
+.vltab li{
+	list-style: none;
+	}
+.vltab ul { 
+    padding:0; 
+	margin:10 0 10 0;
+	}

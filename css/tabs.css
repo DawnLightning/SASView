@@ -103,6 +103,7 @@ html ul.tabs li.active, html ul.tabs li.active {
     float:left;
 	left:2%;
     text-decoration: none;
+	text-align:center;
     font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
     text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
     -webkit-border-radius: 4px;
@@ -389,4 +390,74 @@ tr {
 .vltab ul { 
     padding:0; 
 	margin:10 0 10 0;
+	}
+	
+/*督导信息按钮*/
+.dpages .button {
+    display: inline-block;
+    position: relative;
+    margin: 0px 9px 0 0;
+	width:45px;
+	height:20px;
+    top:-1px;
+    float:right;
+	left:-1%;
+    text-decoration: none;
+    font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+    text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+     -webkit-box-shadow: 3px 3px 3px rgba(0,0,0, .29);
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0, .29);
+    box-shadow: 3px 3px 3px rgba(0,0,0, .29);
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.dpages .button:link {
+    color:#FFF;
+	text-decoration:none;
+}
+.dpages .button:visited {
+    color:#FFF; 
+	text-decoration:none;  
+}
+.dpages .button:hover {
+    color:#FFF;
+	background-color:#383838;
+	text-decoration:none;
+    box-shadow: 0px 0px 0px rgba(225,225,225,0);
+	-webkit-box-shadow:0px 0px 0px rgba(225,225,225,0);
+	-moz-box-shadow:0px 0px 0px rgba(225,225,225,0);
+}
+.dpages .button:active {
+    color:#FFF;
+	text-decoration:none;
+    box-shadow: 0px 0px 0px rgba(225,225,225,0);
+	-webkit-box-shadow:0px 0px 0px rgba(225,225,225,0);
+	-moz-box-shadow:0px 0px 0px rgba(225,225,225,0);
+}	
+.dpages input{
+    border:2px solid #8F8F8F;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	width:45px;
+	height:22px;
+	position:relative;
+	top:-1px;
+	float:left;
+     left:-2%;
+	}	
+.dpages p{
+	font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+	position:relative;
+	top:-1px;  /*3个top*/
+	float:left;
+    left:-3%;
+	color:#333;
 	}

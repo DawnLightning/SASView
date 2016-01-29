@@ -327,7 +327,7 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
   position:absolute;
   float:left;
   left:10%;
-    background-color:#FFF;
+  background-color:#FFF;
   height:500px;
   width:80%;
   overflow:hidden;
@@ -348,6 +348,7 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
 ============================================================================= */
 .caret-color{
   color: blue;
+  margin-left: 4px;
 }
 .drop-title{
   font-size: .75em;
@@ -364,8 +365,10 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
 .po-right{
   float: right;
 }
+.po-left{
+  float: left;
+}
 .sch-btn{
-  color:#FFF;
   display: inline-block;
   margin:9px;
   width:70px;
@@ -416,3 +419,18 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
 .green1{
   color: green;
 }
+/* =============================================================================
+  datapicker
+============================================================================= */
+.datapicker{
+  border: 0;
+  width: 25px;
+  height: 25px;
+
+}
+.datapicker:active{
+  border: 0;
+}
+/* =============================================================================
+  nav
+============================================================================= */

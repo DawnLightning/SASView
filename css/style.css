@@ -155,7 +155,7 @@ p:last-child {
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(38,38,38,.75);
   width: 100%;          /*2*/
   height:100%;
   overflow-y: auto;
@@ -176,17 +176,17 @@ p:last-child {
 
 @media all and (min-width: 300px) {
   .mm-menu {
-    width: 150px;
-    -webkit-transform: translateX(-150px);
-        -ms-transform: translateX(-150px);
-            transform: translateX(-150px);
+    width: 180px;
+    -webkit-transform: translateX(-180px);
+        -ms-transform: translateX(-180px);
+            transform: translateX(-180px);
   }
 }
 /* header */
 .mm-menu__header {
   position: relative;
-  width: 150px;
-  height: 30px;
+  width: 250px;
+  height: 20%;
 }
 
 
@@ -199,9 +199,11 @@ p:last-child {
 }
 
 .mm-menu__item {
+  float: left;
   display: block;
-  width: 100%;
+  width: 80px;
   opacity: 0;
+  margin-left: 5px;
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -212,6 +214,7 @@ p:last-child {
   height: 40px;
   margin: -1px;
 }
+
 .mm-menu__item.in-view {
   opacity: 1;
   -webkit-transform: translateX(0);
@@ -267,7 +270,7 @@ p:last-child {
   overflow: hidden;
   margin: 4px 0;
   padding: 6px;
-  color: rgb(215,213,212);
+  color: #67686a;
   font-size: 8px;
   text-decoration: none;
   -webkit-transition: background 0.3s, color 0.3s;

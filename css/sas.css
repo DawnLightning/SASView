@@ -365,6 +365,7 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
   float: right;
 }
 .sch-btn{
+  color:#FFF;
   display: inline-block;
   margin:9px;
   width:70px;

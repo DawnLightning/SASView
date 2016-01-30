@@ -180,9 +180,9 @@
            </div><!--row-->  
               <div ><!--TABLE-->
                 <p></p>
-                 <table class="table table-condensed" style="font-size:20px" >
-                   <tr bgcolor="f5f5f5">
-                    <th><input type="checkbox" id="all"  onClick="selectall()">全选</th>
+                 <table class="table" style="font-size:20px" >
+                   <tr bgcolor="f5f5f5" style="text-align:center" >
+                    <th><input id="checkweek" type="checkbox" name="all">全选</th>
                     <th><input type="checkbox" id="monday"  onClick="selectmonday()">星期一</th>
                     <th><input type="checkbox" id="tuesday"  onClick="selecttuesday()">星期二</th>
                     <th><input type="checkbox" id="wednesday"  onClick="selectwednesday()">星期三</th>
@@ -193,126 +193,105 @@
                    </tr>
                    <tr>
                     <td>上午</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">1</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">1</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">1</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">1</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">1</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">1</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">1</form></td>
-                  </tr>
-                  <tr >
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">2</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">2</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">2</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">2</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">2</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">2</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">2</form></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">3</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">3</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">3</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">3</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">3</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">3</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">3</form></td>
-                  </tr>
-                  <tr>
-                    <td bordercolor="#FFFFFF">&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">4</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">4</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">4</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">4</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">4</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">4</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">4</form></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">5</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">5</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">5</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">5</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">5</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">5</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">5</form></td>
-                  </tr>
+                    <td><form><input id="checkday" type="checkbox" name="mon">1</form>
+                        <form><input id="checkday" type="checkbox" name="mon">2</form>
+                        <form><input id="checkday" type="checkbox" name="mon">3</form>
+                        <form><input id="checkday" type="checkbox" name="mon">4</form>
+                        <form><input id="checkday" type="checkbox" name="mon">5</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="tue">1</form>
+                        <form><input id="checkday" type="checkbox" name="tue">2</form>
+                        <form><input id="checkday" type="checkbox" name="tue">3</form>
+                        <form><input id="checkday" type="checkbox" name="tue">4</form>
+                        <form><input id="checkday" type="checkbox" name="tue">5</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="wed">1</form>
+                        <form><input id="checkday" type="checkbox" name="wed">2</form>
+                        <form><input id="checkday" type="checkbox" name="wed">3</form>
+                        <form><input id="checkday" type="checkbox" name="wed">4</form>
+                        <form><input id="checkday" type="checkbox" name="wed">5</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="thu">1</form>
+                        <form><input id="checkday" type="checkbox" name="thu">2</form>
+                        <form><input id="checkday" type="checkbox" name="thu">3</form>
+                        <form><input id="checkday" type="checkbox" name="thu">4</form>
+                        <form><input id="checkday" type="checkbox" name="thu">5</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="fri">1</form>
+                        <form><input id="checkday" type="checkbox" name="fri">2</form>
+                        <form><input id="checkday" type="checkbox" name="fri">3</form>
+                        <form><input id="checkday" type="checkbox" name="fri">4</form>
+                        <form><input id="checkday" type="checkbox" name="fri">5</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="sat">1</form>
+                        <form><input id="checkday" type="checkbox" name="sat">2</form>
+                        <form><input id="checkday" type="checkbox" name="sat">3</form>
+                        <form><input id="checkday" type="checkbox" name="sat">4</form>
+                        <form><input id="checkday" type="checkbox" name="sat">5</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="sun">1</form>
+                        <form><input id="checkday" type="checkbox" name="sun">2</form>
+                        <form><input id="checkday" type="checkbox" name="sun">3</form>
+                        <form><input id="checkday" type="checkbox" name="sun">4</form>
+                        <form><input id="checkday" type="checkbox" name="sun">5</form></td>
+                  </tr> 
                   <tr>
                     <td>下午</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">6</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">6</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">6</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">6</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">6</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">6</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">6</form></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">7</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">7</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">7</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">7</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">7</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">7</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">7</form></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">8</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">8</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">8</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">8</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">8</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">8</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">8</form></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">9</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">9</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">9</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">9</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">9</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">9</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">9</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="mon">6</form>
+                        <form><input id="checkday" type="checkbox" name="mon">7</form>
+                        <form><input id="checkday" type="checkbox" name="mon">8</form>
+                        <form><input id="checkday" type="checkbox" name="mon">9</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="tue">6</form>
+                        <form><input id="checkday" type="checkbox" name="tue">7</form>
+                        <form><input id="checkday" type="checkbox" name="tue">8</form>
+                        <form><input id="checkday" type="checkbox" name="tue">9</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="wed">6</form>
+                        <form><input id="checkday" type="checkbox" name="wed">7</form>
+                        <form><input id="checkday" type="checkbox" name="wed">8</form>
+                        <form><input id="checkday" type="checkbox" name="wed">9</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="thu">6</form>
+                        <form><input id="checkday" type="checkbox" name="thu">7</form>
+                        <form><input id="checkday" type="checkbox" name="thu">8</form>
+                        <form><input id="checkday" type="checkbox" name="thu">9</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="fri">6</form>
+                        <form><input id="checkday" type="checkbox" name="fri">7</form>
+                        <form><input id="checkday" type="checkbox" name="fri">8</form>
+                        <form><input id="checkday" type="checkbox" name="fri">9</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="sat">6</form>
+                        <form><input id="checkday" type="checkbox" name="sat">7</form>
+                        <form><input id="checkday" type="checkbox" name="sat">8</form>
+                        <form><input id="checkday" type="checkbox" name="sat">9</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="sun">6</form>
+                        <form><input id="checkday" type="checkbox" name="sun">7</form>
+                        <form><input id="checkday" type="checkbox" name="sun">8</form>
+                        <form><input id="checkday" type="checkbox" name="sun">9</form></td>
                   </tr>
                   <tr>
                     <td>晚上</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">10</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">10</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">10</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">10</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">10</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">10</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">10</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="mon">10</form>
+                        <form><input id="checkday" type="checkbox" name="mon">11</form>
+                        <form><input id="checkday" type="checkbox" name="mon">12</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="tue">10</form>
+                        <form><input id="checkday" type="checkbox" name="tue">11</form>
+                        <form><input id="checkday" type="checkbox" name="tue">12</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="wed">10</form>
+                        <form><input id="checkday" type="checkbox" name="wed">11</form>
+                        <form><input id="checkday" type="checkbox" name="wed">12</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="thu">10</form>
+                        <form><input id="checkday" type="checkbox" name="thu">11</form>
+                        <form><input id="checkday" type="checkbox" name="thu">12</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="fri">10</form>
+                        <form><input id="checkday" type="checkbox" name="fri">11</form>
+                        <form><input id="checkday" type="checkbox" name="fri">12</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="sat">10</form>
+                        <form><input id="checkday" type="checkbox" name="sat">11</form>
+                        <form><input id="checkday" type="checkbox" name="sat">12</form></td>
+                    <td><form><input id="checkday" type="checkbox" name="sun">10</form>
+                        <form><input id="checkday" type="checkbox" name="sun">11</form>
+                        <form><input id="checkday" type="checkbox" name="sun">12</form></td>
                   </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">11</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">11</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">11</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">11</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">11</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">11</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">11</form></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><form><input id="checkday" type="checkbox" name="mon">12</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="tue">12</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="wed">12</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="thu">12</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="fri">12</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sat">12</form></td>
-                    <td><form><input id="checkday" type="checkbox" name="sun">12</form></td>
-                  </tr>
+                  <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   </table>
                  </div> <!--TABLE-->
+                 <div class="muchadd">
+                 <form><input type="checkbox" name="add">&nbsp;批量增加</form>
+                 </div>
+                 <div><form method="get">第<input type="text" name="lastweek"/>周--第<input type="text" name="nextweek"/>周</form> 
+                 </div>
        </div>
     <div class="undis" id="tbc_03">&nbsp;</div>
     <div class="undis" id="tbc_04">&nbsp;</div>

@@ -185,7 +185,7 @@ p:last-child {
 /* header */
 .mm-menu__header {
   position: relative;
-  width: 250px;
+  width: 180px;
   height: 20%;
 }
 
@@ -284,6 +284,7 @@ p:last-child {
   position: relative;
   margin-top: 5px;
   z-index: 2;
+  font-size: 12px;
 }
 
 /* the touch effect, for when a link is touched */

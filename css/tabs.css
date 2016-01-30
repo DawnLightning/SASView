@@ -314,6 +314,7 @@ overflow:hidden;}
 	vertical-align:middle;
 	margin-top:6.5px;
 	}/*复选框位置*/
+
 th p{
 	text-align:center;
 	color:#383838;
@@ -328,7 +329,8 @@ tr {
 /*table溢出 未完善定义*/
 .ove{
 	height:380px;
-	overflow:hidden;}
+	overflow:hidden;
+	}
 
 /*督导信息*/
 #navtab li {
@@ -352,7 +354,7 @@ tr {
 	background:#fcf;
 	}/*删除则影响bb*/
 .listtab  { 
-    font: normal 0.65em/2em Microsoft YaHei;
+    font: normal 17px/2em Microsoft YaHei;
     padding:3px;
 	text-align:left;
 	}
@@ -410,7 +412,7 @@ tr {
     float:right;
 	left:-1%;
     text-decoration: none;
-    font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+   font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
     text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -458,13 +460,24 @@ tr {
 	position:relative;
 	top:-1px;
 	float:left;
-     left:-2%;
+     left:24%;
 	}	
 .dpages p{
-	font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+	font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
 	position:relative;
 	top:-1px;  /*3个top*/
 	float:left;
-    left:-3%;
+    left:21%;
 	color:#333;
 	}
+	
+/*督导信息时间表*/
+
+#checkday{
+	text-align:center;
+	vertical-align:middle;
+	margin-bottom:3px;
+	margin-right:10px;
+	margin-left:-60px;
+}
+

@@ -382,7 +382,7 @@ tr {
 	text-align:left;
 	height:495px;
 	/*border-top:1px solid #AAC7E9;border-right:1px solid #AAC7E9;border-bottom:1px solid #AAC7E9; 观察范围*/
-	overflow:auto;
+	/*overflow:auto;*/
 	_width:89%;
     _height:100%;
 	}/*产生滚动条 结合外面divoverflowhidden*/
@@ -484,8 +484,13 @@ tr {
 	width:auto;
 	margin-left:2%;
 	font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+    float:left;
 	}
-	
+.weeks{
+	margin-top:-3px;
+	margin-right:16px;
+	font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+	}	
 .weeks input{
     border:2px solid #8F8F8F;
 	-webkit-border-radius: 3px;
@@ -493,6 +498,53 @@ tr {
     border-radius: 3px;
 	width:45px;
 	height:22px;
-	position:relative;
-	float:left;
 	}
+.con .button {
+	color:#FFF;
+    display: inline-block;
+	width:45px;
+	height:20px;
+    top:-24.5px;
+	left:43%;
+    text-decoration: none;
+   font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+    text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+     -webkit-box-shadow: 3px 3px 3px rgba(0,0,0, .29);
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0, .29);
+    box-shadow: 3px 3px 3px rgba(0,0,0, .29);
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.con .button:link {
+    color:#FFF;
+	text-decoration:none;
+}
+.con .button:visited {
+    color:#FFF; 
+	text-decoration:none;  
+}
+.con .button:hover {
+    color:#FFF;
+	text-decoration:none;
+    box-shadow: 0px 0px 0px rgba(225,225,225,0);
+	-webkit-box-shadow:0px 0px 0px rgba(225,225,225,0);
+	-moz-box-shadow:0px 0px 0px rgba(225,225,225,0);
+}
+.con .button:active {
+    color:#FFF;
+	text-decoration:none;
+    box-shadow: 0px 0px 0px rgba(225,225,225,0);
+	-webkit-box-shadow:0px 0px 0px rgba(225,225,225,0);
+	-moz-box-shadow:0px 0px 0px rgba(225,225,225,0);
+}	
+.twenty{
+    font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+	margin-top:-30px;
+	float:right;}

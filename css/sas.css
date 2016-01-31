@@ -455,3 +455,29 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
   float: right;
   margin-right: 2.0833333%;
 }
+/* =============================================================================
+  teacher
+============================================================================= */
+
+#form1{ float:left; width:320px}
+#form1 label {
+float: left;
+text-align: left;
+width: 80px;
+}
+input {
+cursor: pointer;
+vertical-align: middle;
+}
+#div1 {
+padding-left: 120px;
+} #div1 input {
+border: 1px solid #dddddd;
+color: #999999;
+float: left;
+height: 36px;
+line-height: 36px;
+margin-right: 10px;
+padding: 0 5px;
+width: 190px;
+}

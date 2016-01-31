@@ -35,3 +35,60 @@ $(document).ready(function() {
     });  
   
 });  
+
+/* =============================================================================
+  table add & delete
+============================================================================= */
+window.onload=function()
+{
+var oTab=document.getElementById('tb1');
+var oBtn=document.getElementById('btn1');
+var oNo=document.getElementById('teacherNo');
+var oName=document.getElementById('teacherName');
+var oTitle=document.getElementById('teacherTitle');
+var oRoom=document.getElementById('teacherRoom');
+var oTel=document.getElementById('teacherTel');
+var oEmail=document.getElementById('teacherEmail');
+oBtn.onclick=function()
+{
+var oTr=document.createElement('tr');//创建一个tr   
+//创建第一个td   
+var oTd=document.createElement('td');
+oTd.innerHTML=oNo.value;
+oTr.appendChild(oTd);//将td插入tr
+//创建第二个td
+var oTd=document.createElement('td');
+oTd.innerHTML=oName.value;
+oTr.appendChild(oTd);//将td插入tr
+//创建第三个td
+var oTd=document.createElement('td');
+oTd.innerHTML=oTitle.value;
+oTr.appendChild(oTd);//将td插入tr
+//创建第四个td
+var oTd=document.createElement('td');
+oTd.innerHTML=oRoom.value;
+oTr.appendChild(oTd);//将td插入tr
+//创建第五个td
+var oTd=document.createElement('td');
+oTd.innerHTML=oTel.value;
+oTr.appendChild(oTd);//将td插入tr
+//创建第二个td
+var oTd=document.createElement('td');
+oTd.innerHTML=oEmail.value;
+oTr.appendChild(oTd);//将td插入tr
+
+oTab.tBodies[0].appendChild(oTr);//将整个tr插入到表格中
+}
+
+}
+
+function show()
+{
+var value = document.getElementById("div1").style.display;
+if(value=="none")
+{
+document.getElementById("div1").style.display="block";
+}
+else
+document.getElementById("div1").style.display="none";
+}

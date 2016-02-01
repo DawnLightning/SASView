@@ -105,7 +105,7 @@ html ul.tabs li.active, html ul.tabs li.active {
 	left:2%;
     text-decoration: none;
 	text-align:center;
-    font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+    font: normal 0.7em/2em Microsoft YaHei;/*字大小跟字距*/
     text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -584,4 +584,10 @@ tr {
 
 .grade th p{
 	color:#FFF;
+	}
+
+/*自动生成*/
+.autopro{
+	text-align:center;
+	font-size: 1.2em;
 	}

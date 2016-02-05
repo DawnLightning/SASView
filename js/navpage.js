@@ -1,6 +1,7 @@
 function navpage(pagename,t1,t2){
   $("#title1").html(t1);
   $("#title2").html(t2);
+  window.location.hash="#!/"+pagename;
   showpage(pagename);
 }
 function showpage(pagename){
@@ -12,8 +13,8 @@ function showpage(pagename){
     return;
   }
   var url=document.URL;
-  url= url.substring(0,url.lastIndexOf('/')+1);
-  url += "includes/"+pagename;
+  url= url.substring(0,url.split('#')[0].lastIndexOf('/')+1);
+  url += "includes/"+pagename+".html";
   xmlhttp.onreadystatechange=function()
   {
     if (xmlhttp.readyState==4 || xmlhttp.readyState=="complete")

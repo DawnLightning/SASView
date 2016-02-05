@@ -1,8 +1,6 @@
 function navpage(pagename,t1,t2){
-  var title1=document.getElementById("title1");
-  var title2=document.getElementById("title2");
-  title1.innerHTML=t1;
-  title2.innerHTML=t2;
+  $("#title1").html(t1);
+  $("#title2").html(t2);
   showpage(pagename);
 }
 function showpage(pagename){
@@ -20,8 +18,7 @@ function showpage(pagename){
   {
     if (xmlhttp.readyState==4 || xmlhttp.readyState=="complete")
     {
-      var divpage=  document.getElementById("wrapper") ;
-      divpage.innerHTML=xmlhttp.responseText;
+      $("#wrapper").html(xmlhttp.responseText);
     }
   };
   xmlhttp.open("GET",url,true);

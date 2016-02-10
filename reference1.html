@@ -11,99 +11,167 @@
   	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/pikaday.css">
-
-	<!--[if IE]>
-		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
-	<![endif]-->
+  <!--[if IE]>
+    <script src="js/html5shiv.min.js"></script>
+  <![endif]-->
+  <!--[if (lt IE 9)]>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]> 
+  <link rel="stylesheet" media="screen" href="css/ie6.css" type="text/css" />
+  <![endif]-->
 </head>
 <body background="image/10.jpg">
 <div id="container">
   <div class="header">
-<span class=" dd-title-center dd-title-white">   督导&nbsp;|&nbsp;</span><span class="dd-title-blue">排课参考<a href="/" class="admin admin-text">欢迎您，管理员</a><img src="image/14.png"class="admin admin-1"></span>
+<span><a href="/" class="admin admin-text">欢迎您，管理员</a><img src="image/14.png"class="admin admin-1" id="image"></span>
   </div>
 <div id="page">
   <div class="container-fluid">
     <div id="wrapper" class="wrapper">
+        <nav  class="mm-menu">
+    <div class="mm-header">
+      <span class=" dd-title-center dd-title-white">   督导&nbsp;|&nbsp;</span><span class="dd-title-blue">排课参考</span>
+    </div>
+            <ul class="items">
+              <li class="item item-top">
+                <a class="link">
+                  <img src="image/1.png">
+                  <div class="link-text">
+                    主页
+                  </div>
+                </a>
+              </li>
+              <li class="item item-top">
+                <a class="link">
+                  <img src="image/2.png">
+                  <div class="link-text">
+                    进度表
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link">
+                  <img src="image/3.png">
+                  <div class="link-text">
+                    排课参考
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link">
+                  <img src="image/4.png">
+                  <div class="link-text">
+                    自动生成
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link">
+                  <img src="image/5.png">
+                  <div class="link-text">
+                    教师信息
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link">
+                  <img src="image/6.png">
+                  <div class="link-text">
+                    督导信息
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link">
+                  <img src="image/7.png">
+                  <div class="link-text">
+                    权限管理
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link">
+                  <img src="image/8.png">
+                  <div class="link-text">
+                    设置
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /nav -->
      <div class="contain">        
         <div class="tab_container">  
         <div id="tab1" class="tab_content" style="display: block; ">
-               <div class="po-right" style="margin-bottom:5px;">
-                <div class="btn-group">
-                <a class="drop-title dropdown-toggle" data-toggle="dropdown" href="#">请选择周次<span class="caret caret-color"></span></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"style="height:350px;overflow-y:scroll">
-                <li><a tabindex="-1" href="#">第1周</a></li>
-                <li><a tabindex="-1" href="#">第2周</a></li>
-                <li><a tabindex="-1" href="#">第3周</a></li>
-                <li><a tabindex="-1" href="#">第4周</a></li>
-                <li><a tabindex="-1" href="#">第5周</a></li>
-                <li><a tabindex="-1" href="#">第6周</a></li>
-                <li><a tabindex="-1" href="#">第7周</a></li>
-                <li><a tabindex="-1" href="#">第8周</a></li>
-                <li><a tabindex="-1" href="#">第9周</a></li>
-                <li><a tabindex="-1" href="#">第10周</a></li>
-                <li><a tabindex="-1" href="#">第11周</a></li>
-                <li><a tabindex="-1" href="#">第12周</a></li>
-                <li><a tabindex="-1" href="#">第13周</a></li>
-                <li><a tabindex="-1" href="#">第14周</a></li>
-                <li><a tabindex="-1" href="#">第15周</a></li>
-                <li><a tabindex="-1" href="#">第16周</a></li>
-                <li><a tabindex="-1" href="#">第17周</a></li>
-                <li><a tabindex="-1" href="#">第18周</a></li>
-                <li><a tabindex="-1" href="#">第19周</a></li>
-                <li><a tabindex="-1" href="#">第20周</a></li>
-                </ul><!--听课时间-->
-               </div><!--btn-group-->
-               <div class="btn-group">
-                <a class="drop-title dropdown-toggle" data-toggle="dropdown" href="#">请选择星期<span class="caret caret-color"></span></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="#">星期一</a></li>
-                <li><a tabindex="-1" href="#">星期二</a></li>
-                <li><a tabindex="-1" href="#">星期三</a></li>
-                <li><a tabindex="-1" href="#">星期四</a></li>
-                <li><a tabindex="-1" href="#">星期五</a></li>
-                <li><a tabindex="-1" href="#">星期六</a></li>
-                <li><a tabindex="-1" href="#">星期日</a></li>
-
-                </ul><!--听课时间-->
-               </div><!--btn-group-->
-                <div class="btn-group">
-                <a class="drop-title dropdown-toggle" data-toggle="dropdown" href="#">请选择节次<span class="caret caret-color"></span></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="#">1-2</a></li>
-                <li><a tabindex="-1" href="#">1-3</a></li>
-                <li><a tabindex="-1" href="#">2-3</a></li>
-                <li><a tabindex="-1" href="#">2-4</a></li>
-                <li><a tabindex="-1" href="#">3-4</a></li>
-                <li><a tabindex="-1" href="#">3-5</a></li>
-                <li><a tabindex="-1" href="#">4-5</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="#">6-7</a></li>
-                <li><a tabindex="-1" href="#">6-8</a></li>
-                <li><a tabindex="-1" href="#">7-8</a></li>
-                <li><a tabindex="-1" href="#">8-9</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a tabindex="-1" href="#">10-11</a></li>
-                <li><a tabindex="-1" href="#">11-12</a></li>
-                </ul><!--节次-->
-               </div><!--btn-group-->
-               <div class="btn-group">
-                <a class="drop-title dropdown-toggle" data-toggle="dropdown" href="#">请选择教师姓名<span class="caret caret-color"></span></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="#">&nbsp;</a></li>
-                <li><a tabindex="-1" href="#">&nbsp;</a></li>
-                <li><a tabindex="-1" href="#">&nbsp;</a></li>
-                <li><a tabindex="-1" href="#">&nbsp;</a></li>
-                <li><a tabindex="-1" href="#">&nbsp;</a></li>
-                <li><a tabindex="-1" href="#">&nbsp;</a></li>
-                </ul><!--教师姓名-->
-               </div><!--btn-group-->
-               <div class="btn-group">
-                <a class="drop-title dropdown-toggle" data-toggle="dropdown" href="#">请选择授课方式<span class="caret caret-color"></span></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="#">理论</a></li>
-                <li><a tabindex="-1" href="#">实验</a></li>
-                </ul><!--授课方式-->
-               </div><!--btn-group-->
+               <div class="po-right" >
+                 <form>
+                   <select name="周次">
+                    <option value="请选择周次">请选择周次</option>
+                    <option value="第一周">第一周</option>
+                    <option value="第二周">第二周</option>
+                    <option value="第三周">第三周</option>
+                    <option value="第四周">第四周</option>
+                    <option value="第五周">第五周</option>
+                    <option value="第六周">第六周</option>
+                    <option value="第七周">第七周</option>
+                    <option value="第八周">第八周</option>
+                    <option value="第九周">第九周</option>
+                    <option value="第十周">第十周</option>
+                    <option value="第十一周">第十一周</option>
+                    <option value="第十二周">第十二周</option>
+                    <option value="第十三周">第十三周</option>
+                    <option value="第十四周">第十四周</option>
+                    <option value="第十五周">第十五周</option>
+                    <option value="第十六周">第十六周</option>
+                    <option value="第十七周">第十七周</option>
+                    <option value="第十八周">第十八周</option>
+                    <option value="第十九周">第十九周</option>
+                    <option value="第二十周">第二十周</option>
+                   </select>
+                   <select name="星期">
+                    <option value="请选择星期">请选择星期</option>
+                    <option value="星期一">星期一</option>
+                    <option value="星期二">星期二</option>
+                    <option value="星期三">星期三</option>
+                    <option value="星期四">星期四</option>
+                    <option value="星期五">星期五</option>
+                    <option value="星期六">星期六</option>
+                    <option value="星期日">星期日</option>
+                   </select>
+                   <select name="节次">
+                    <option value="请选择节次">请选择节次</option>
+                    <option value="1-2">1-2</option>
+                    <option value="1-3">1-3</option>
+                    <option value="2-3">2-3</option>
+                    <option value="2-4">2-4</option>
+                    <option value="3-4">3-4</option>
+                    <option value="3-5">3-5</option>
+                    <option value="4-5">4-5</option>
+                    <option value="6-7">6-7</option>
+                    <option value="6-8">6-8</option>
+                    <option value="7-8">7-8</option>
+                    <option value="8-9">8-9</option>
+                    <option value="10-11">10-11</option>
+                    <option value="11-12">11-12</option>
+                   </select>
+                   <select name="教师姓名">
+                    <option value="请选择教师姓名">请选择教师姓名</option>
+                    <option ></option>
+                    <option ></option>
+                    <option ></option>
+                    <option ></option>
+                    <option ></option>
+                    <option ></option>
+                    <option ></option>
+                    <option ></option>
+                   </select>
+                   <select name="授课方式">
+                    <option value="请选择授课方式">请选择授课方式</option>
+                    <option value="理论">理论</option>
+                    <option value="实验">实验</option>
+                   </select>
+                 </form>
                </div><!--po right-->
                 
 
@@ -266,62 +334,13 @@
 </div>
  </div> 
 </div>
-  <button id="mm-menu-toggle" class="mm-menu-toggle"></button>
-  <nav id="mm-menu" class="mm-menu">
-    <div class="mm-menu__header">
-    </div>
-    <ul class="mm-menu__items">
-      <li class="mm-menu__item">
-         <a class="mm-menu__link" href="confirm.html">
-            <img src="image/1.png"><div class="mm-menu__link-text">主页</div>
-         </a>
-      </li>
-      <li class="mm-menu__item">
-        <a class="mm-menu__link" href="schedule.html">
-          <img src="image/2.png"><div class="mm-menu__link-text">进度表</div>
-        </a> 
-      </li>
-      <li class="mm-menu__item">
-          <a class="mm-menu__link" href="reference.html">
-          <img src="image/3.png"><div class="mm-menu__link-text">排课参考</div>
-          </a>
-      </li>  
-      <li class="mm-menu__item">
-        <a class="mm-menu__link" href="auto.html">
-          <img src="image/4.png"><div class="mm-menu__link-text">自动生成</div>
-        </a>
-      </li> 
-      <li class="mm-menu__item">
-        <a class="mm-menu__link" href="teacher.html">
-          <img src="image/5.png"><div class="mm-menu__link-text">教师信息</div>
-        </a>
-      </li>
-      <li class="mm-menu__item">
-        <a class="mm-menu__link" href="supervisor.html">
-          <img src="image/6.png"><div class="mm-menu__link-text">督导信息</div>
-        </a>
-      </li>
-      <li class="mm-menu__item">
-        <a class="mm-menu__link" href="key.html">
-          <img src="image/7.png"><div class="mm-menu__link-text">权限管理</div>
-        </a>
-      </li>
-      
-      <li class="mm-menu__item">
-        <a class="mm-menu__link" href="set.html">
-          <img src="image/8.png"><div class="mm-menu__link-text">设置</div>
-        </a>
-      </li>
-        
-    </ul>
-  </nav><!-- /nav -->
+
 </div><!--page-->
 <div id="footer"><span class="foot-white">CopyRight </span><span class="foot-blue">破晓技术团队.</span><span class="foot-white">All Rights Resevered.</span></div>
 </div><!--container-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/tabs.js"></script>
-  <script src="js/materialMenu.js"></script>
   
   <script>
     var menu = new Menu;

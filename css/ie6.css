@@ -569,6 +569,47 @@ width: 190px;
   margin:5px 0;
   font-size: 12px;
 }
+
+/* =============================================================================
+  auto
+============================================================================= */
+.row-one{
+   width:12%;height:25px;background-color: rgb(38,51,93);border:1px solid #FFFFFF;
+}
+.row-two{
+   width:12%;height:25px;background-color: rgb(46,63,107);border:1px solid #FFFFFF;
+}
+.row-three{
+   width:20%;height:25px;background-color: rgb(52,74,121);border:1px solid #FFFFFF;
+}
+.row-four{
+   width:20%;height:25px;background-color: rgb(60,88,136);border:1px solid #FFFFFF;
+}
+.row-five{
+   width:20%;height:25px;background-color: rgb(66,99,150);border:1px solid #FFFFFF;
+}
+.row-six{
+   width:20%;height:25px;background-color: rgb(71,108,160);border:1px solid #FFFFFF;
+}
+.row-btn-left{
+	width:15%; height:40px;margin-top:3% ;margin-left:1%;font-size: 0.75em
+}
+.row-btn-right{
+	width:15%; height:40px;margin-left:4%;margin-top:3%;text-align:center;font-size: 0.75em
+}
+.mar-one{
+	margin-top:8%
+}
+.mar-two{
+	margin-top:2%
+}
+/* =============================================================================
+  teacher_information
+============================================================================= */
+.in-row-btn{
+  width:15%; height:40px;
+
+
 /*@media all and (min-width: 300px) {
   .mm-menu {
     width: 190px;

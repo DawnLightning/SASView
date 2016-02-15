@@ -105,7 +105,7 @@ html ul.tabs li.active, html ul.tabs li.active {
 	left:2%;
     text-decoration: none;
 	text-align:center;
-    font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+    font: normal 0.7em/2em Microsoft YaHei;/*字大小跟字距*/
     text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -155,7 +155,7 @@ border-bottom:1px solid #8F8F8F;
     float:right;
 	left:-1%;
     text-decoration: none;
-    font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+    font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
     text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -207,14 +207,14 @@ border-bottom:1px solid #8F8F8F;
 	position:relative;
 	top:4px; 
 	float:left;
-    left:10%;
+    left:;
 	}	
 .pages p{
-	font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+	font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
 	position:relative;
 	top:4px;  /*3个top*/
 	float:left;
-    left:9%;
+    left:;
 	color:#333;
 	}
 /*搜索框影响翻页--top不一样*/
@@ -229,7 +229,7 @@ border-bottom:1px solid #8F8F8F;
     float:right;
 	left:-1%;
     text-decoration: none;
-    font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+    font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
     text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -277,14 +277,14 @@ border-bottom:1px solid #8F8F8F;
 	position:relative;
 	top:-1px;
 	float:left;
-    left:10%;
+    left:;
 	}	
 .pagese p{
-	font: normal 0.6em/2em Microsoft YaHei;/*字大小跟字距*/
+	font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
 	position:relative;
 	top:-1px;  /*3个top*/
 	float:left;
-    left:9%;
+    left:;
 	color:#333;
 	}
 
@@ -460,14 +460,14 @@ tr {
 	position:relative;
 	top:-1px;
 	float:left;
-     left:24%;
+     left:16%;
 	}	
 .dpages p{
 	font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
 	position:relative;
 	top:-1px;  /*3个top*/
 	float:left;
-    left:21%;
+    left:14%;
 	color:#333;
 	}
 	
@@ -482,8 +482,9 @@ tr {
 /*批量增加*/
 .muchadd{
 	width:auto;
+	top: -5px;
 	margin-left:2%;
-	font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+	font: normal 0.7em/2em Microsoft YaHei;/*字大小跟字距*/
     float:left;
 	}
 .weeks{
@@ -504,8 +505,8 @@ tr {
     display: inline-block;
 	width:45px;
 	height:20px;
-    top:-24.5px;
-	left:43%;
+    top:-22.5px;
+	left:48%;
     text-decoration: none;
    font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
     text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
@@ -548,3 +549,45 @@ tr {
     font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
 	margin-top:-30px;
 	float:right;}
+	
+
+/* =============================================================================
+  auto
+============================================================================= */
+.row-one{
+   width:120px;height:40px;background-color: rgb(35,45,86);
+}
+.row-two{
+   width:120px;height:40px;background-color: rgb(43,58,101);
+}
+.row-three{
+  width:200px;height:40px;background-color: rgb(50,67,114);
+}
+.row-four{
+   width:200px;height:40px;background-color: rgb(55,81,129);
+}
+.row-five{
+   width:200px;height:40px;background-color: rgb(63,94,144);
+}
+.row-six{
+   width:200px;height:40px;background-color: rgb(71,107,159);
+}
+.row-btn-left{
+	width:17%; height:40px;margin-top:5% ;margin-left:1%;font-size: 1em
+}
+.row-btn-right{
+	width:17%; height:40px;margin-left:4%;margin-top:5%;text-align:center;font-size: 1em
+}
+.mar-one{
+	margin-top:13%
+}
+.mar-two{
+	margin-top:3%
+}
+/* =============================================================================
+  teacher_information
+============================================================================= */
+.in-row-btn{
+  width:15%; height:40px;margin-left:9%;margin-top:5%;
+}
+

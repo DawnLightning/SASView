@@ -378,7 +378,7 @@ html ul.sch-tabs li.active, html ul.sch-tabs li.active {
   height:25px;
   color:#fff;
   text-decoration: none;
-  font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+  font: normal 0.7em/2em Microsoft YaHei;/*字大小跟字距*/
   text-shadow: 0.2px 0.2px 0.1px rgba(255,255,255, .22);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;

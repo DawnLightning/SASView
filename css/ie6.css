@@ -625,3 +625,15 @@ ul.tabs {
   color:#fff;
   font-size:0px;
 }
+
+/*index*/
+.img-left {
+  margin-left: 8%;
+}
+.teacher-entrance {
+  float: right;
+}
+.btn-margin {
+  margin-top: 1em;
+  margin-left: 5%;
+}

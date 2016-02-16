@@ -97,7 +97,7 @@ a:hover{
   -moz-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Firefox3.6+ */ 
   -webkit-box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Chrome5+, Safari5+ */ 
   box-shadow:1px 1px 1px rgba(0,0,0,.24) inset; /* For Latest Opera */
-  background-color: rgb(56,83,130);
+  background-color: rgb(50,78,123);
   outline:none;
   color: rgb(229,222,189);
   font-size: 1em;

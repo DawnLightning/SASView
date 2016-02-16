@@ -608,7 +608,73 @@ width: 190px;
 ============================================================================= */
 .in-row-btn{
   width:15%; height:40px;
+/* =============================================================================
+  page_position
+============================================================================= */
+.pagese .button {
+    color:#FFF;
+    display: inline-block;
+    position: relative;
+    margin: 0px 9px 0 0;
+    width:45px;
+    height:20px;
+    top:4px; 
+  
+    left:5%;
+    text-decoration: none;
+    font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+}
 
+.pagese .button:link {
+  color:#FFF;
+  text-decoration:none;
+}
+.pagese .button:visited {
+  color:#FFF; 
+  text-decoration:none;  
+}
+.pagese .button:hover {
+  color:#FFF;
+  text-decoration:none;
+  background-color:#383838;
+}
+.pagese .button:active {
+  color:#FFF; 
+  text-decoration:none;
+} 
+.gray{
+  background: #8F8F8F;
+  }
+  
+.pagese input{
+  border:2px solid #8F8F8F;
+  width:45px;
+  height:22px;
+  position:relative;
+  top:4px; 
+  float:left;
+  left:;
+  } 
+.pagese p{
+  font: normal 0.65em/2em Microsoft YaHei;/*字大小跟字距*/
+  position:relative;
+  top:4px;  /*3个top*/
+  float:left;
+  left:30;
+  color:#333;
+  }
+/* =============================================================================
+  background
+============================================================================= */
+body{ 
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#5587c0), to(#182146));   
+    background: -webkit-linear-gradient(left, #5587c0,#182146 );   
+    background: -moz-linear-gradient(left, #5587c0,#182146 );   
+    background: -o-linear-gradient(left, #5587c0,#182146 );   
+    background: -ms-linear-gradient(left, #5587c0,#182146 );   
+    background: linear-gradient(left, #5587c0,#182146 );   
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #5587c0, endColorstr = #182146);   
+} 
 
 /*@media all and (min-width: 300px) {
   .mm-menu {
